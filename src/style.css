@@ -1,0 +1,19 @@
+button{
+    margin-right: 10px;
+    border-radius: 8px;
+    border-color: white;
+}
+
+body{
+    background-image: url("https://www.chevtek.io/content/images/2021/02/ezgif.com-gif-maker.png");
+    
+}
+
+h1{
+    color: aliceblue;
+}
+
+h4{
+    margin-left: 40px;
+    color:aquamarine;
+}

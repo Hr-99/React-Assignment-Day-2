@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from "react"
+import "./style.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+
+
+function Counter(){
+
+let [score,setScore]=useState(0)                    
+    return(
+        <div>
+            <h1 style={{textAlign:"center"}}> Counter Application </h1>
+            <h4> The value of score is {score} . </h4>
+            <button onClick={()=>score<25?setScore(score+1):""}>Increment</button>
+            <button onClick={()=>score>0?setScore(score-1):""}>Decrement</button>
+            <button onClick={()=>{setScore(0)}}>Reset</button>
+
+        </div>
+
+    )
+    }
+
+    export default Counter
